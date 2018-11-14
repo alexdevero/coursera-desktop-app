@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.rawgit.com/alexdevero/coursera-desktop-app/master/docs/coursera-logo.png" width="135" align="center">
+  <img src="https://raw.githubusercontent.com/alexdevero/coursera-desktop-app/master/docs/coursera-logo.png" width="135" align="center">
   <br>
   <br>
 </p>
@@ -20,7 +20,7 @@
 A simple Coursera desktop app build with electron.
 
 <p align="center">
-  <img src="https://cdn.rawgit.com/alexdevero/coursera-desktop-app/master/docs/coursera-desktop-app-screen.png" width="800">
+  <img src="https://raw.githubusercontent.com/alexdevero/coursera-desktop-app/master/docs/coursera-desktop-app-screen.png" width="800">
   <br>
   <br>
 </p>
