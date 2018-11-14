@@ -1,0 +1,59 @@
+{
+  "name": "coursera-desktop-app",
+  "version": "1.0.0",
+  "description": "A simple Coursera desktop app build with electron.",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexdevero/coursera-desktop-app.git"
+  },
+  "homepage": "https://github.com/alexdevero/coursera-desktop-app#readme",
+  "bugs": {
+    "url": "https://github.com/alexdevero/coursera-desktop-app/issues"
+  },
+  "author": {
+    "name": "Alex Devero",
+    "email": "deveroalex@gmail.com",
+    "url": "https://alexdevero.com/"
+  },
+  "contributors": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "keywords": [
+    "app",
+    "application",
+    "coursera",
+    "desktop",
+    "desktop-app",
+    "desktop-application",
+    "education",
+    "electron",
+    "electron-app",
+    "javascript",
+    "learning"
+  ],
+  "engines": {
+    "node": ">=11.0",
+    "npm": ">=6.0",
+    "yarn": ">=1.0.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "package:linux": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=linux --icon=assets/coursera-logo",
+    "package:macappstore": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=mas --icon=assets/coursera-logo",
+    "package:osx": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=darwin --icon=assets/coursera-logo",
+    "package:win": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=win32 --icon=assets/coursera-logo",
+    "package:all": "cross-env NODE_ENV=prod electron-packager ./ --out=./builds --overwrite --platform=all --icon=assets/coursera-logo",
+    "start": "cross-env NODE_ENV=dev electron app.js"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "electron": "^3.0.9",
+    "electron-packager": "^12.2.0"
+  }
+}
